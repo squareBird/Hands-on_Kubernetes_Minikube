@@ -28,7 +28,7 @@ Client Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.5", GitCom
 Server Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.3", GitCommit:"816c97ab8cff8a1c72eccca1026f7820e93e0d25", GitTreeState:"clean", BuildDate:"2022-01-25T21:19:12Z", GoVersion:"go1.17.6", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
-##2. 필수 패키지 설치
+## 2. 필수 패키지 설치
 ```bash
 # 필수 패키지 설치
 apt-get update
