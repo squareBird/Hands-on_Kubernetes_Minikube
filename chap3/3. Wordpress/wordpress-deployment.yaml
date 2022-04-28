@@ -13,6 +13,37 @@ spec:
     tier: frontend
   type: NodePort
 ---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: wordpress-persistent-storage
+spec:
+  accessModes:
+    - ReadWriteOnce
+  awsElasticBlockStore:
+    fsType: ext4
+    volumeID:
+  capacity:
+    storage: 20Gi
+  storageClassName: gp2
+  volumeMode: Filesystem
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: wp-pv-claim
+  labels:
+    app: wordpress
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: gp2
+  volumeMode: Filesystem
+  volumeName: wordpress-persistent-storage
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:

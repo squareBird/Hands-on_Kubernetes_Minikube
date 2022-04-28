@@ -9,8 +9,8 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
-#  storageClassName: gp2
+      storage: 20Gi
+  storageClassName: gp2
   volumeMode: Filesystem
   volumeName: wordpress-persistent-storage
 ---
@@ -25,7 +25,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
-#  storageClassName: gp2
+      storage: 20Gi
+  storageClassName: gp2
   volumeMode: Filesystem
-  volumeName: wordpress-persistent-storage
+  volumeName: mysql-persistent-storage

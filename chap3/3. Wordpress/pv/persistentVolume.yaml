@@ -10,7 +10,7 @@ spec:
     volumeID:
   capacity:
     storage: 20Gi
-#  storageClassName: gp2
+  storageClassName: gp2
   volumeMode: Filesystem
 ---
 apiVersion: v1
@@ -26,5 +26,5 @@ spec:
   capacity:
     storage: 20Gi
   persistentVolumeReclaimPolicy: Retain
-#  storageClassName: gp2
+  storageClassName: gp2
   volumeMode: Filesystem
