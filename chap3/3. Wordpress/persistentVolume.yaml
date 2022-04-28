@@ -13,8 +13,6 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: gp2-retain
   volumeMode: Filesystem
-  hostPath: # node에 저장하도록 path 지정
-    path: /wordpress-data
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -31,5 +29,3 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: gp2-retain
   volumeMode: Filesystem
-  hostPath: # node에 저장하도록 path 지정
-    path: /mysql-data
