@@ -7,6 +7,6 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 sudo apt-get update
-sudo apt-get install docker.io conntrack
+sudo apt-get install -y docker.io conntrack
 
 sudo minikube start --driver=none
