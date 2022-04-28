@@ -7,14 +7,11 @@ spec:
     - ReadWriteOnce
   awsElasticBlockStore:
     fsType: ext4
-    volumeID: vol-04b85a6f0e979cd05
+    volumeID:
   capacity:
-    storage: 5Gi
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: standard
+    storage: 20Gi
+#  storageClassName: gp2
   volumeMode: Filesystem
-  local:
-    path: /wp
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -25,11 +22,9 @@ spec:
     - ReadWriteOnce
   awsElasticBlockStore:
     fsType: ext4
-    volumeID: vol-07b89bb83bd01ee87
+    volumeID:
   capacity:
-    storage: 5Gi
+    storage: 20Gi
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: standard
+#  storageClassName: gp2
   volumeMode: Filesystem
-  local:
-    path: /wp
