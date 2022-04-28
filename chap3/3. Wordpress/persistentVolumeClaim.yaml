@@ -10,7 +10,6 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  storageClassName: gp2-retain
   volumeMode: Filesystem
   volumeName: wordpress-persistent-storage
 ---
@@ -26,7 +25,6 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  storageClassName: gp2-retain
   volumeMode: Filesystem
   volumeName: wordpress-persistent-storage
 ---
