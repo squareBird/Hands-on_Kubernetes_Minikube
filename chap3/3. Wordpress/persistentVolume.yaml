@@ -11,8 +11,10 @@ spec:
   capacity:
     storage: 5Gi
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: gp2-retain
+  storageClassName: standard
   volumeMode: Filesystem
+  local:
+    path: /wp
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -27,5 +29,7 @@ spec:
   capacity:
     storage: 5Gi
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: gp2-retain
+  storageClassName: standard
   volumeMode: Filesystem
+  local:
+    path: /wp

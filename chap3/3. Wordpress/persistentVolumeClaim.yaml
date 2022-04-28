@@ -29,4 +29,3 @@ spec:
   storageClassName: standard
   volumeMode: Filesystem
   volumeName: wordpress-persistent-storage
----
