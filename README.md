@@ -1,5 +1,5 @@
 # k8s-hands-on
-ppt 참고
+<a href="https://github.com/squareBird/k8s-hands-on/blob/main/Minikube%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Kubernetes-Hands_On.pdf">ppt</a>
 
 ## chap2
 - Minikube 설치
