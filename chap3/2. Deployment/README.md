@@ -72,3 +72,12 @@ $ kubectl apply -f .
 $ kubectl get pod
 $ kubectl get svc
 ```
+
+## 3. Deployment 버전 업그레이드
+```bash
+# 지연시간 설정
+kubectl patch deploy myweb -p '{"spec": {"minReadySeconds": 10}}'
+
+# webapp:0.2 버전으로 업데이트
+kubectl set image deploy myweb myweb=myweb:0.2
+```
