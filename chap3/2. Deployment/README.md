@@ -1,5 +1,7 @@
 # Deploymenet 배포 및 버전관리
 
+`Deployment`를 통한 `Contaienr` 배포 및 버전관리
+
 ## 1. Container Image Build
 
 `Docker runtime`을 이용한 `Container image` 생성.
